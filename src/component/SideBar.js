@@ -32,25 +32,6 @@ export default function SideBar() {
     }
   }
 
-  useEffect(() => {
-    window.addEventListener('scroll', scrollWindow);
-    return () => {
-      window.removeEventListener('scroll', scrollWindow);
-    }
-  }, []);
-
-  // the private method, which scrolls sidebar
-  const scrollWindow = () => {
-    let length = 1 + window.pageYOffset;
-
-    // if sidebar value non-null
-    if (sideBar !== undefined && sideBar.current != null) {
-      length -= sideBar.current.offsetTop;
-      sideBar.current.style.paddingTop = length + 'px';
-    }
-  }
-
-
   return (
     <div className="SideBar" ref={sideBar}>
       <div>

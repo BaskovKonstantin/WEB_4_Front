@@ -18,7 +18,6 @@ export default function DataTable() {
     deleteAllPoints().then(response => {
       if (response.ok) {
         dispatch(loadPoints([]))
-        window.scrollTo(0,160)
       }
     })
   }

@@ -13,7 +13,6 @@ class App extends React.Component {
       <BrowserRouter basename="/WEB_4">
           <Hat/>
         <div className="App">
-
           <SideBar/>
           <Content/>
         </div>
