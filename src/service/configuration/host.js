@@ -1,1 +1,1 @@
-export const backendHost = "http://localhost:3080"
+export const backendHost = "http://localhost:8370"

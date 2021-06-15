@@ -2,13 +2,44 @@
   text-align: center;
 
   .Clock {
-    margin-top: min(300px, 36vh);
+    margin-top: min(100px, 36vh);
     font-family: Consolas, monospace;
-    font-size: 225%;
-    color: #c1c1c1;
-  }
+    font-size: 300%;
+
+    &:hover {
+      font-size: 500%;
+      color: red;
+      animation: neon-1 .2s ease-in-out infinite alternate;
+    }
+    //min-width: 360px;
+
+    @keyframes neon-1 {
+      from {
+        text-shadow: 0 0 6px rgba(255, 0, 0, 0.92), 0 0 30px rgba(161, 0, 0, 0.34), 0 0 12px rgba(255, 127, 127, 0.52), 0 0 21px rgba(255, 0, 0, 0.92), 0 0 34px rgba(191, 226, 255, 0.78), 0 0 54px rgba(191, 226, 255, 0.92);
+      }
+      to {
+        text-shadow: 0 0 6px rgba(116, 0, 0, 0.98), 0 0 30px rgba(255, 0, 0, 0.92), 0 0 12px rgba(255, 5, 5, 0.73), 0 0 22px rgba(154, 0, 0, 0.84), 0 0 38px rgba(191, 226, 255, 0.88), 0 0 60px #FFF;
+      }
+    }
+    }
+
+
   .Date {
     font-family: Consolas, monospace;
-    color: #c1c1c1;
-  }
-}
+    font-size: 200%;
+    &:hover {
+      font-size: 400%;
+      color: red;
+      animation: neon-1 .2s ease-in-out infinite alternate;
+    }
+    //min-width: 360px;
+
+    @keyframes neon-1 {
+      from {
+        text-shadow: 0 0 6px rgba(255, 0, 0, 0.92), 0 0 30px rgba(161, 0, 0, 0.34), 0 0 12px rgba(255, 127, 127, 0.52), 0 0 21px rgba(255, 0, 0, 0.92), 0 0 34px rgba(191, 226, 255, 0.78), 0 0 54px rgba(191, 226, 255, 0.92);
+      }
+      to {
+        text-shadow: 0 0 6px rgba(116, 0, 0, 0.98), 0 0 30px rgba(255, 0, 0, 0.92), 0 0 12px rgba(255, 5, 5, 0.73), 0 0 22px rgba(154, 0, 0, 0.84), 0 0 38px rgba(191, 226, 255, 0.88), 0 0 60px #FFF;
+      }
+    }
+    }}

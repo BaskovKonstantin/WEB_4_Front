@@ -66,7 +66,7 @@ export default function DataForm() {
         </div>
         <div className="Outer">
           <div className="Inner">
-            <label htmlFor="input">Enter value of Y (between -5 and 3)</label>
+            <label htmlFor="input">Enter value of Y (between -3 and 3)</label>
             <div id="input" className="Input">
               <Input type="text" maxLength={16} onChange={(a) => dispatch(setValueOfY(a))}/>
             </div>

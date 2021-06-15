@@ -1,7 +1,11 @@
 .Content {
   width: min(90%, calc(100% - 64px));
-  background-color: #313240;
+  background-color: #ffcc00;
+  border: 20px;
+  border-color: black;
   border-radius: 8px;
   padding: 12px 2%;
+  margin: 1%;
+  color: black;
   //min-width: 360px;
 }

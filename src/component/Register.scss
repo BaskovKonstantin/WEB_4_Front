@@ -1,18 +1,20 @@
-$line: #5e5f79;
+$line: #000000;
 .RegisterButton {
   width: 100%;
   background: none;
   border: 1px solid $line;
   padding: 7px 0;
   border-radius: 8px;
-  color: #c1c1c1;
+  color: #000000;
   outline: none;
   transition: 200ms;
+  background-color: #ffffff;
+
   &:hover {
     text-decoration: underline;
-    background-color: #3f4051;
-    color: #4790ef;
-    border-color: #4790ef;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-color: #000000;
   }
   &:active {
     background-color: #313240;
@@ -29,8 +31,8 @@ $line: #5e5f79;
   overflow: auto;
   >div {
     width: 400px;
-    background-color: #313240;
-    border: 1px solid #5e5f79;
+    background-color: #000000;
+    border: 1px solid #000000;
     border-radius: 24px;
     animation: scalable 300ms;
     margin: 112px auto;
@@ -65,7 +67,7 @@ $line: #5e5f79;
     color: #dedeed;
   }
   >p span {
-    color: #5396f1;
+    color: #ff0000;
     &:hover {
       text-decoration: underline;
       cursor: pointer;
@@ -87,31 +89,33 @@ $line: #5e5f79;
     border-radius: 8px;
     padding: 0 6px;
     color: #c1c1c1;
-    border: 1px solid #5e5f79;
+    border: 1px solid #000000;
     outline: none;
   }
   input[type="text"],
   input[type="password"] {
     margin-top: 20px;
-    background-color: #3f4051;
+    background-color: #ffffff;
     color: #dedeed;
     letter-spacing: 1px;
     &:focus {
-      box-shadow: 0 0 0 2px #164bb0;
-      border-color: #3482ec;
+      box-shadow: 0 0 0 2px #ff0000;
+      border-color: #000000;
     }
   }
   input[type="button"] {
     height: 34px;
     margin-top: 24px;
-    background-color: #3482ec;
-    color: #ffffff;
+    background-color: #ffcc00;
+    color: #000000;
     cursor: pointer;
     &:hover {
-      background-color: #4790ef;
+      background-color: #ff0000;
+      color: #ffffff;
     }
     &:active {
-      background-color: #3482ec;
+      background-color: #af0000;
+      color: #ffffff;
     }
   }
   small {

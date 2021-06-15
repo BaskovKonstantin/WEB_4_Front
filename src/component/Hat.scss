@@ -1,0 +1,29 @@
+.Hat {
+  height: min(10%, calc(100vh - 32px));
+  width: min(75%, calc(100% - 64px));
+  background-color: #ffcc00;
+  color: #000000;
+  border-radius: 8px;
+  border-color: black;
+  padding: 2%;
+  margin: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 26px;
+  &:hover {
+    background-color: black;
+    color: red;
+    animation: neon-1 .2s ease-in-out infinite alternate;
+  }
+  //min-width: 360px;
+
+  @keyframes neon-1 {
+    from {
+      text-shadow: 0 0 6px rgba(255, 0, 0, 0.92), 0 0 30px rgba(161, 0, 0, 0.34), 0 0 12px rgba(255, 127, 127, 0.52), 0 0 21px rgba(255, 0, 0, 0.92), 0 0 34px rgba(191, 226, 255, 0.78), 0 0 54px rgba(191, 226, 255, 0.92);
+    }
+    to {
+      text-shadow: 0 0 6px rgba(116, 0, 0, 0.98), 0 0 30px rgba(255, 0, 0, 0.92), 0 0 12px rgba(255, 5, 5, 0.73), 0 0 22px rgba(154, 0, 0, 0.84), 0 0 38px rgba(191, 226, 255, 0.88), 0 0 60px #FFF;
+    }
+  }
+}

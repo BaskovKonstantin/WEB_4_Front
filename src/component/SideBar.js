@@ -41,7 +41,7 @@ export default function SideBar() {
 
   // the private method, which scrolls sidebar
   const scrollWindow = () => {
-    let length = 16 + window.pageYOffset;
+    let length = 1 + window.pageYOffset;
 
     // if sidebar value non-null
     if (sideBar !== undefined && sideBar.current != null) {
@@ -55,8 +55,8 @@ export default function SideBar() {
 
   return (
     <div className="SideBar" ref={sideBar}>
+      <img src={ReactLogo} alt="react"/>
       <div>
-        <img src={ReactLogo} alt="react"/>
         <div className="NavBar">
           <Link className={'link'} to="/home">Home</Link>
           {authValue && <Link className={'link'} to="/main">Main</Link>}
@@ -68,7 +68,6 @@ export default function SideBar() {
           </div> :
           <div className="Auth"><Logout/></div>}
         <a className="Github" href={sourceCode} target="_blank">
-          <img src={GithubLogo} alt="github"/>
         </a>
       </div>
     </div>

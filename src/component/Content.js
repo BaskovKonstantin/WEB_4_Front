@@ -11,15 +11,15 @@ export default function Content() {
   const authValue = useSelector(selectAuth)
 
   return (
-    <div className="Content">
-      <Switch>
-        <Route exact path={["/","/home"]}>
-          <HomePage />
-        </Route>
-        <Route path="/main">
-          {authValue ? <MainPage/> : <Redirect to="/home"/>}
-        </Route>
-      </Switch>
-    </div>
+      <div className="Content">
+        <Switch>
+          <Route exact path={["/","/home"]}>
+            <HomePage />
+          </Route>
+          <Route path="/main">
+            {authValue ? <MainPage/> : <Redirect to="/home"/>}
+          </Route>
+        </Switch>
+      </div>
   )
 }

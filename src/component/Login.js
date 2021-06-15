@@ -69,7 +69,7 @@ export const Login = React.forwardRef((props, ref) => {
       <input className="LoginButton" type="button" value="Login" onClick={showLoginForm}/>
       <div className="LoginForm" ref={ref}>
         <div className="Form">
-          <input type="button" value="x" onClick={hideLoginForm}/>
+          <input type="button" value="X" onClick={hideLoginForm}/>
           <div className="FormGroup">
             <span>Login</span>
           </div>

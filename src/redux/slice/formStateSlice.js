@@ -6,7 +6,7 @@ export const formStateSlice = createSlice({
     point: {
       x: null,
       y: null,
-      r: 2
+      r: 0
     }
   },
   reducers: {

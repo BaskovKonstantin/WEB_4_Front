@@ -6,29 +6,33 @@ $lineColor: #5e5f79;
   padding-right: 6px;
   transition: 100ms;
 
+  img {
+    margin-left: 30px;
+    margin-right: 5px;
+    width: $iconSide;
+    height: $iconSide;
+    animation: spin infinite 20s linear;
+
+  }
+
   >div {
-    height: min(720px, calc(100vh - 32px));
+    height: min(50%, calc(100vh - 32px));
     min-height: 480px;
-    background-color: #313240;
+    background-color: #ffcc00;
     border-radius: 8px;
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 12px 10%;
 
-    img {
-      width: $iconSide;
-      height: $iconSide;
-    }
-    >img {
-      animation: spin infinite 20s linear;
-      @keyframes spin {
-        from {transform: rotate(0)}
-        to {transform: rotate(360deg)}
-      }
-    }
+
+
+
   }
+
 }
+
+
 .NavBar {
   width: 100%;
   align-items: center;
@@ -43,19 +47,20 @@ $lineColor: #5e5f79;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
-    color: #c1c1c1;
+    color: #000000;
     margin-top: 16px;
     padding: 6px 0;
     border-radius: 8px;
     border: 1px solid $lineColor;
     transition: 200ms;
     outline: none;
+    background-color: #ffffff;
 
     &:hover {
-      background-color: #3f4051;
+      background-color: #ff0000;
       text-decoration: underline;
-      color: #4790ef;
-      border-color: #4790ef;
+      color: #ffffff;
+      border-color: #000000;
     }
     &:active {
       background-color: #313240;
