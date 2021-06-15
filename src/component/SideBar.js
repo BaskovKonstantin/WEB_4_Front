@@ -50,12 +50,9 @@ export default function SideBar() {
     }
   }
 
-  // link to the sources
-  const sourceCode = "https://github.com/insaniss/frontend-with-react-for-spring-boot-application";
 
   return (
     <div className="SideBar" ref={sideBar}>
-      <img src={ReactLogo} alt="react"/>
       <div>
         <div className="NavBar">
           <Link className={'link'} to="/home">Home</Link>
@@ -67,8 +64,6 @@ export default function SideBar() {
             <Register setFormVisibility={setFormVisibility} ref={registerForm}/>
           </div> :
           <div className="Auth"><Logout/></div>}
-        <a className="Github" href={sourceCode} target="_blank">
-        </a>
       </div>
     </div>
   )

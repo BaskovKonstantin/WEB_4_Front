@@ -1,14 +1,15 @@
 .Hat {
   height: min(10%, calc(100vh - 32px));
-  width: min(75%, calc(100% - 64px));
+  width: min(40%, calc(100% - 64px));
+  width: max(55%, 64px);
   background-color: #ffcc00;
   color: #000000;
   border-radius: 8px;
   border-color: black;
   padding: 2%;
   margin: 1%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20%;
+  margin-right: 30%;
   text-align: center;
   font-size: 26px;
   &:hover {

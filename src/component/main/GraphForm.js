@@ -85,7 +85,7 @@ export default function GraphForm() {
 
             <g opacity={swtch?"1":"0"} stroke="none" ref={frame}>{
               points.map((item) => {
-                return <circle r={3} cx={pixelX(item.x, item.r)} cy={pixelY(item.y, item.r)} fill={item.status?"#55ffbe":"#7a1cbe"}/>
+                return <circle r={3} cx={pixelX(item.x, 4)} cy={pixelY(item.y, 4)} fill={item.status?"#55ffbe":"#7a1cbe"}/>
               })
             }</g>
             <line x1="5" y1={axisY} x2="395" y2={axisY} visibility={axisVisibility}/>
